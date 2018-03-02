@@ -37,5 +37,5 @@ $FirstLetterFirstname = $UserFirstname.substring(0,1) #Trekker ut først bokstav
 $SAM =  $FirstLetterFirstname + $User.Etternavn #Lager til brukernavn med første bokstav i fornavn og legger til etternavn 
 
 New-ADUser -Name $Detailedname -SamAccountName $SAM -UserPrincipalName $SAM -DisplayName $Detailedname -GivenName $user.fornavn -Surname $user.Etternavn -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -StreetAddress $user.GateAdresse -City $user.By -PostalCode $user.Postnr -EmailAddress $user.Epost  -Enabled $true -Path $OU #må være på samme linje som New-ADUser 
-Add-ADGroupMember -Identity $Group -Member $SAM #kommenter ut om du ikke skal melde inn brukere i en gruppe
+Add-ADGroupMember -Identity $Group -Member $SAM #kommenter ut om du ikke skal melde inn brukere i en gruppe -Member må byttes til Members på Windows Server 2012 eller nyere
 }
