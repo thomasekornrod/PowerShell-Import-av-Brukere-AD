@@ -1,18 +1,18 @@
 ############################################################################
 ############################################################################
-####																	####
-#### 	Laget av: Thomas - Bergeland VGS								####
-#### 	Dato: 02.03.2018												####
-#### 																	####
-####	Powershell script importerer brukere fra .csv fil til AD		####
-####	Husk å endre data Path, OU og Gruppe før import kjøres.			#### 
-####	For å feilsøke kan script kjøres i PowerShell ISE				####
-####																	####
-####	Du må også tillate at PowerShell Script kan kjøres. 			####
-####	Dette gjøres ved å gjøre følgende kommando i PowerShell			####
-####		Set-ExecutionPolicy unrestricted							####
-####	Velg Yes for å aktivere denne									####
-####																	####
+####																	                                  ####
+#### 	Laget av: Thomas - Bergeland VGS							                   	####
+#### 	Dato: 02.03.2018												                          ####
+#### 																	                                  ####
+####	Powershell script importerer brukere fra .csv fil til AD	      	####
+####	Husk å endre data Path, OU og Gruppe før import kjøres.		      	#### 
+####	For å feilsøke kan script kjøres i PowerShell ISE			          	####
+####																                                  	####
+####	Du må også tillate at PowerShell Script kan kjøres. 		        	####
+####	Dette gjøres ved å gjøre følgende kommando i PowerShell		      	####
+####		Set-ExecutionPolicy unrestricted							                  ####
+####	Velg Yes for å aktivere denne									                    ####
+####																	                                  ####
 ############################################################################
 ############################################################################
 
